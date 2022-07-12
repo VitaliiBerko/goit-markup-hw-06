@@ -875,3 +875,10 @@ body {
 .form-checkbox {
   margin-bottom: 0;
 }
+
+.condition {
+  line-height: 1.71;
+
+  color: var(--accent-color);
+  border-bottom: 0.5px solid var(--accent-color);
+}
