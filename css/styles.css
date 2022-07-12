@@ -583,6 +583,7 @@ body {
   fill: var(--main-bg-color);
 }
 
+/* Form cta */
 .form-cta {
   display: flex;
   align-items: flex-end;
@@ -622,35 +623,6 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 }
-/* 
-.submit {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 50px;
-  padding: 0;
-  margin: 0;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-
-  color: var(--main-bg-color);
-
-  background: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color var(--duration) var(--timing-function);
-}
-
-.submit:hover,
-.submit:focus {
-  background-color: var(--accent-button);
-} */
 
 .icon-send {
   fill: currentColor;
@@ -793,6 +765,8 @@ body {
   line-height: 1.9;
 }
 
+/* Modal */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -821,6 +795,7 @@ body {
   transform: translate(-50%, -50%);
   min-width: 528px;
   min-height: 581px;
+  padding: 40px;
   background-color: var(--main-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -845,12 +820,58 @@ body {
   cursor: pointer;
 }
 
+/* Form */
+
 .form-modal {
   width: 448px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-textarea {
+.form-title {
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  margin-bottom: 12px;
+
+  color: var(--title-text-color);
+}
+
+.form-field-label {
+  display: block;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.16;
+
+  letter-spacing: 0.01em;
+
+  color: var(--text-color);
+}
+
+.form-field-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.textarea {
   resize: none;
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+}
+
+.thumb-checkbox {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.form-checkbox {
+  margin-bottom: 0;
 }
